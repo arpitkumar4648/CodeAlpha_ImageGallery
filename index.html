@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pixel View — Image Gallery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <h1 class="wordmark">PIXEL<span class="dot">·</span>VIEW</h1>
+  <p class="tagline">A contact sheet of frames worth a second look. Sort by category, click to enter the viewer.</p>
+</header>
+
+<nav class="filter-bar" id="filterBar" aria-label="Filter gallery by category">
+  <button class="filter-pill active" data-filter="all">All</button>
+  <button class="filter-pill" data-filter="nature">Nature</button>
+  <button class="filter-pill" data-filter="urban">Urban</button>
+  <button class="filter-pill" data-filter="portrait">Portrait</button>
+  <button class="filter-pill" data-filter="abstract">Abstract</button>
+</nav>
+
+<main class="gallery" id="gallery" aria-label="Image gallery"></main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <div class="lightbox-stage">
+    <button class="lb-close" id="lbClose" aria-label="Close viewer">&times;</button>
+    <div class="lightbox-frame">
+      <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous image">&#8249;</button>
+      <img id="lbImage" src="" alt="" />
+      <button class="lb-nav lb-next" id="lbNext" aria-label="Next image">&#8250;</button>
+    </div>
+    <div class="lb-caption">
+      <p class="title" id="lbTitle"></p>
+      <p class="lb-counter">FRAME <b id="lbCurrent">01</b> / <span id="lbTotal">12</span></p>
+    </div>
+    <div class="filmstrip" id="filmstrip"></div>
+  </div>
+</div>
+
+<footer>PIXEL<span class="dot">·</span>VIEW — built with HTML, CSS &amp; vanilla JS</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
