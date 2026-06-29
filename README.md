@@ -30,12 +30,7 @@ ImageGallery/
 
 No build tools or installation required — this is a static front-end project.
 
-Clone the repository
-git clone https://github.com/arpitkumar4648/CodeAlpha_PixelView.git
-Open the project folder
-cd CodeAlpha_PixelView
-Open index.html in any modern browser (double-click the file, or use a local server like VS Code's Live Server extension).
-Keep index.html, style.css, and script.js in the same folder — index.html links to the other two by relative path.
+
 
 🎮 Usage
 
